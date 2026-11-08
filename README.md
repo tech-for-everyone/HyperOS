@@ -43,7 +43,7 @@ flowchart LR
     APPS --> VID["MJPEG + PCM<br/>player"]
     WEB --> NET["DHCP · DNS<br/>HTTP · HTTPS"]
     VID --> NET
-    GFX --> K["Linux 6.12<br/>kernel"]
+    GFX --> K["Zircon<br/>kernel"]
     NET --> K
     K --> Q["QEMU virt<br/>aarch64 · HVF"]
     NET -. "10.0.2.2" .-> B["Mac helper<br/>yt-dlp + ffmpeg"]
